@@ -3,7 +3,6 @@ apply plugin: "idea"
 apply plugin: "eclipse"
 apply plugin: "application"
 apply plugin: "findbugs"
-apply plugin: "application"
 
 repositories {
 	maven {url "http://download.osgeo.org/webdav/geotools"}
