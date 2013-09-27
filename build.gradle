@@ -1,9 +1,9 @@
 apply plugin: "java"
 apply plugin: "idea"
 apply plugin: "eclipse"
-apply plugin: "application"
 apply plugin: "findbugs"
-apply plugin: "application"
+apply plugin: "war"
+apply plugin: "jetty"
 
 repositories {
 	maven {url "http://download.osgeo.org/webdav/geotools"}
@@ -30,17 +30,6 @@ targetCompatibility = 1.7
 
 version = "1.0"
 
-mainClassName = "Main"
-jar {
-    manifest {
-        attributes "Implementation-Title": "Gradle template project", 
-				   "Implementation-Version": version,
-				   "Created-By": "Camptocamp SA",
-				   "Build-Date": new Date().toString()
-				   
-		
-    }
-}
 
 findbugs {
 	toolVersion = "2.0.1"
